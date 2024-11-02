@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(243, 228, 201);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.image{
+    height: 50%;
+    display: none;
+}
+main{
+    margin-left: 10%;
+    margin-top: 8%;
+  
+}
+h1{
+    text-align: center;
+    margin-bottom: 1em;
+    color:rgb(59, 59, 245) ;
+}
+
+
+input{
+    display: block;
+    padding: 1em;
+    padding-right: 10em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: none;
+    border-radius: 20px;
+}
+
+input:focus{
+    border-color:blue;
+}
+
+button, select{
+    border: none;
+    padding: 1em;
+    margin-top: 1.5em ;
+    margin-right: 1em;
+    border-radius: 60px;
+    cursor: pointer;
+}
+select{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border: solid  rgb(59, 59, 245) 0.2px;
+    color: rgb(59, 59, 245);
+    background-color: transparent;
+    transition: color 0.5s, background-color 0.5s;
+   
+}
+
+#convert{
+    background-color: rgb(59, 59, 245);
+    color: white;
+    transition: color 0.5s, background-color 0.5s;
+    padding-left:2em;
+    padding-right:2em;
+    
+}
+
+#convert:hover{
+    color: rgb(59, 59, 245);
+    background-color: white;
+}
+
+
+select:hover{
+   
+    background-color: white;
+}
+.reference{
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+@media(max-width:380px){
+    main{
+        margin-top: 25%;
+        margin-left: 5%;
+        margin-right:5% ;
+        width: 90%;
+    }
+    button, select{
+        margin-right: 0.5em;
+    }
+}
+@media(min-width:390px)and (max-width: 650px){
+    main{
+        margin-top: 25%;
+        margin-left: 10%;
+        width: 90%;
+    }
+    h1{
+        margin-right: 1.5em;
+    }
+   
+}
+@media(min-width:651px)and (max-width: 900px){
+    main{
+        margin-top: 25%;
+        margin-left: 30%;
+        width: 90%;
+    }
+    h1{
+        text-align: left;
+       
+    }
+   
+}
+
+@media(min-width:1000px){
+    main{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+     
+        width: 100%;
+    }
+   h1{
+    text-align: left;
+    margin-left: 1.5em;
+   }
+.image{
+    display: block;
+    height: 50%;
+}
+img{
+    padding: 0;
+    margin: 0;
+   
+}
+body{
+    overflow: hidden;
+}
+   
+}
+

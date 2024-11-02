@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Convertor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+ <main>
+    <div class="left">
+        <h1>Unit Convertor</h1>
+
+        <h3 id="unit1">Kilograms</h3>
+    
+        <input type="text" id="userInput" autofocus>
+    
+        <h3 id="unit2">Grams</h3>
+    
+        <input type="text" id="answer" readonly>
+    
+        <div class="buttons"> 
+            
+                <select  id="unitSelection">
+                    <option value="Kilograms to Grams">Kilograms to Grams</option>
+                    <option value="Grams to Kilograms"> Grams to Kilograms</option>
+                    <option value="Kilograms to Tonnes">Kilograms to Tonnes</option>
+                    <option value="Tonnes to Kilograms">Tonnes to Kilograms</option>
+                    <option value="Metres to Kilometres">Metres to Kilometres</option>
+                    <option value="Kilometres to Metres">Kilometres to Metres</option>
+                    <option value="Kilometres to Miles">Kilometres to Miles</option>
+                    <option value="Miles to Kilometres">Miles to Kilometres</option>
+                    <option value="Celsius to Fahrenheit">&degCelsius to &degFahrenheit</option>
+                    <option value="Fahrenheit to Celsius">&degFahrenheit to &degCelsius</option>
+                </select>
+            
+    
+            <button id="convert" type="submit" onclick="doConversion(); console.log(unitSelected);">Convert</button>
+        </div>
+        <p class="reference">Created by: Michael Ampomah</p>
+    </div>
+    <img src="image.png" class="image">
+
+ </main>
+<script src="index.js"></script>
+</body >
+</html>
